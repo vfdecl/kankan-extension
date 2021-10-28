@@ -1,6 +1,6 @@
 html, body {
-      width: 400px;
-      height: 592px;
+      width: 520px;
+      height: 200px;
       position: relative;
     }
 
@@ -11,11 +11,34 @@ html, body {
     }
 
     .popup-page {
-      width: 400px;
+      width: 500px;
       height: 100%;
     }
-
-    #toast {
+    .search-bar {
+      display: flex;
+      width: 100%;
+    }
+    .tips {
+      padding: 5px;
+      color: #333;
+      font-size: 22px;
+    }
+    #ipt, #btn {
+      display: inline-block;
+      box-sizing: border-box;
+      height: 40px;
+      margin: 0;
+      font-size: 20px;
+    }
+    #ipt {
+      flex: 1 1 80px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #btn {
+      width: 80px;
+    }
+    #toast, #loading {
       display: flex;
       align-items: center;
       position: absolute;
@@ -31,6 +54,6 @@ html, body {
       background: rgba(0,0,0,0.7);
     }
 
-    #toast.hide {
+    #toast.hide, #loading.hide {
       display: none;
     }

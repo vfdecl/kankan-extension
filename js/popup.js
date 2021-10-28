@@ -1,8 +1,10 @@
 $(function () {
   var toast = $('#toast')
+  var loading = $('#loading')
   var ipt = $('#ipt')
   var btn = $('#btn')
   var timer = null
+  var playUrl = 'https://www.cainiaoblog.cn/v.html?system=ios&vid='
 
   function showToast (msg, duration = 1500) {
     toast.removeClass('hide').text(msg)
@@ -12,12 +14,20 @@ $(function () {
     }, duration)
   }
 
+  function showLoading () {
+    loading.removeClass('hide')
+  }
+
+  function hideLoading () {
+    loading.addClass('hide')
+  }
 
   btn.on('click', function () {
     var iptVal = (ipt.val() || '').trim()
-        
     if (!iptVal) {
-      showToast('请输入搜索词')
+      showToast('地址不能为空')
+    } else {
+      window.open(playUrl + iptVal)
     }
   })
 

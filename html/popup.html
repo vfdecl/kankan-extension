@@ -13,11 +13,21 @@
 <body>
   <div class="popup-page">
     <div class="search-bar">
-      <input id="ipt" type="text">
-      <button id="btn">点击按钮</button>
+      <input id="ipt" type="text" placeholder="请粘贴视频的播放页面地址">
+      <button id="btn">播放</button>
+    </div>
+    <div class="tips">
+      <p>使用方法：</p>
+      <p>
+      首先进入网站的视频播放页面，然后复制浏览器中的地址，粘贴到输入框中，点击“播放”按钮即可观看
+      </p>
     </div>
   </div>
   <div id="toast" class="hide"></div>
+  <div id="loading" class="hide">
+    加载中...
+  </div>
+  <script src="../js/crypto.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="../js/popup.js"></script>
 </body>

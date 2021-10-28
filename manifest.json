@@ -17,11 +17,5 @@
     "default_title": "看看插件",
     "default_popup": "html/popup.html"
   },
-  "permissions": [
-    "storage",
-    "http://*/*",
-    "https://*/*"
-  ],
-
   "homepage_url": "https://www.xuehuayu.cn"
 }
