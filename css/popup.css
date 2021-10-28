@@ -1,0 +1,36 @@
+html, body {
+      width: 400px;
+      height: 592px;
+      position: relative;
+    }
+
+    div {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .popup-page {
+      width: 400px;
+      height: 100%;
+    }
+
+    #toast {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: auto;
+      height: 36px;
+      padding: 0 5px;
+      font-size: 22px;
+      color: rgb(120, 224, 35);
+      border-radius: 4px;
+      background: rgba(0,0,0,0.7);
+    }
+
+    #toast.hide {
+      display: none;
+    }
