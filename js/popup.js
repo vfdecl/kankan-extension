@@ -22,13 +22,21 @@ $(function () {
     loading.addClass('hide')
   }
 
-  btn.on('click', function () {
+  function startPlay () {
     var iptVal = (ipt.val() || '').trim()
     if (!iptVal) {
       showToast('地址不能为空')
     } else {
       window.open(playUrl + iptVal)
     }
+  }
+  ipt.on('keydown', function (e) {
+    if (e.which === 13) {
+      startPlay()
+    }
+  })
+  btn.on('click', function () {
+    startPlay()
   })
 
 })
