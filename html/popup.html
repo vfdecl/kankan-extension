@@ -14,12 +14,14 @@
   <div class="popup-page">
     <div class="search-bar">
       <input id="ipt" type="text" placeholder="请粘贴视频的播放页面地址">
-      <button id="btn">播放</button>
+      <select name="jxapis" id="jxapis">
+        <option disabled selected value="none">选择接口</option>
+      </select>
     </div>
     <div class="tips">
       <p>使用方法：</p>
       <p>
-      首先进入网站的视频播放页面，然后复制浏览器中的地址，粘贴到输入框中，敲“回车”键或者点击“播放”按钮即可观看
+      首先进入网站的视频播放页面，然后复制浏览器中的地址，粘贴到输入框中，选择解析接口即可观看
       </p>
     </div>
   </div>
@@ -27,8 +29,8 @@
   <div id="loading" class="hide">
     加载中...
   </div>
-  <script src="../js/crypto.js"></script>
   <script src="../js/jquery.js"></script>
+  <script src="../js/jxapis.js"></script>
   <script src="../js/popup.js"></script>
 </body>
 

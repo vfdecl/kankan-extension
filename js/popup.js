@@ -1,10 +1,32 @@
 $(function () {
+  var slt = $('#jxapis')
   var toast = $('#toast')
   var loading = $('#loading')
   var ipt = $('#ipt')
-  var btn = $('#btn')
   var timer = null
-  var playUrl = 'https://www.cainiaoblog.cn/v.html?system=ios&vid='
+
+  initOptions()
+
+  function initOptions () {
+    var opts = ''
+    for (key in jxapis) {
+      if (jxapis[key]) {
+        opts += `<option value="${jxapis[key]}">${key}</ooption>`
+      }
+    }
+    slt.html(slt.html() + opts)
+  }
+
+  slt.change(function (e) {
+    var iptVal = (ipt.val() || '').trim()
+    const val = e.target.value
+    if (!iptVal) {
+      slt.find('option').eq(0).prop('selected', true)
+      showToast('地址不能为空')
+    } else {
+      window.open(val + iptVal)
+    }
+  })
 
   function showToast (msg, duration = 1500) {
     toast.removeClass('hide').text(msg)
@@ -22,22 +44,6 @@ $(function () {
     loading.addClass('hide')
   }
 
-  function startPlay () {
-    var iptVal = (ipt.val() || '').trim()
-    if (!iptVal) {
-      showToast('地址不能为空')
-    } else {
-      window.open(playUrl + iptVal)
-    }
-  }
-  ipt.on('keydown', function (e) {
-    if (e.which === 13) {
-      startPlay()
-    }
-  })
-  btn.on('click', function () {
-    startPlay()
-  })
 
 })
 
