@@ -1,11 +1,3 @@
 # 看看chrome插件
 
-已发布chrome扩展商店，正在审核中。。。
-
-暂时可通过下面方法使用，
-
-> 使用方式
-
-下载扩展压缩包，解压
-打开chrome或者edge浏览器的扩展页面，打开开发者模式
-点击“加载已解压的扩展程序”，选中解压的目录
+已发布chrome扩展商店，[点击查看](https://chrome.google.com/webstore/detail/%E7%9C%8B%E7%9C%8B/pegiockicjmdnkjbnppeeakeogdkegac?hl=zh-CN&authuser=0)
