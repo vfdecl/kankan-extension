@@ -11,7 +11,7 @@ $(function () {
     var opts = ''
     for (key in jxapis) {
       if (jxapis[key]) {
-        opts += `<option value="${jxapis[key]}">${key}</ooption>`
+        opts += `<option value="${jxapis[key]}">${key}</option>`
       }
     }
     slt.html(slt.html() + opts)
@@ -24,7 +24,7 @@ $(function () {
       slt.find('option').eq(0).prop('selected', true)
       showToast('地址不能为空')
     } else {
-      window.open(val + iptVal)
+      window.open(val + iptVal, 'kankan', 'width='+(window.screen.availWidth)+',height='+(window.screen.availHeight)+ ', fullscreen=yes, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')
     }
   })
 
