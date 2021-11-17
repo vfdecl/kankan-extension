@@ -1,5 +1,5 @@
 var jxapis = {
-  "看看解析": "https://www.cainiaoblog.cn/v.html?system=ios&vid=",
+  "看看解析": "https://www.cainiaoblog.cn/v.html?source=extension&system=ios&from=leduo&vid=",
   "虾米": "https://jx.xmflv.com/?url=",
   "ivito": "https://jx.ivito.cn/?url=",
   "parwix": "https://jx.parwix.com:4433/player/?url=",
