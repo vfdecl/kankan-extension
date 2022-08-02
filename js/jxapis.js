@@ -3,7 +3,7 @@ var jxapis = {
   "看看2": "http://v.xuehuayu.cn?source=extension&from=fanqie&vid=",
   "虾米": "https://jx.xmflv.com/?url=",
   "ivito": "https://jx.ivito.cn/?url=",
-  "parwix": "https://jx.parwix.com:4433/player/?url=",
+  "parwix": "https://jx.bozrc.com:4433/player/?url=",
   "yparse": "https://yparse.jn1.cc/index.php?url=",
   "yparse2": "https://yparse.jn1.cc/?url=",
   "wandhi": "http://vip.wandhi.com/?v=",
