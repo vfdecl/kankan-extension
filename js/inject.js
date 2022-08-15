@@ -1,6 +1,6 @@
 (function () {
-  const ldApi = 'https://app.xuehuayu.cn/v.html?source=extension&from=leduo&vid='
-  const fqApi = 'https://app.xuehuayu.cn/v.html?source=extension&from=fanqie&vid='
+  const ldApi = 'https://xuehuayu.cn/v.html?source=extension&from=leduo&vid='
+  const fqApi = 'https://xuehuayu.cn/v.html?source=extension&from=fanqie&vid='
   const loc = window.location.href
 
   function _$ (selector) {

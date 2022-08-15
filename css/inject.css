@@ -1,7 +1,8 @@
 .vod-li {
   display: flex;
   align-items: center;
-  height: 30px;
+  flex-wrap: wrap;
+  height: auto;
 }
 .vod-li span {
   height: 20px;
