@@ -1,6 +1,6 @@
 var jxapis = {
-  "看看1": "http://v.xuehuayu.cn?source=extension&from=leduo&vid=",
-  "看看2": "http://v.xuehuayu.cn?source=extension&from=fanqie&vid=",
+  "看看1": "https://app.xuehuayu.cn/v.html?source=extension&from=leduo&vid=",
+  "看看2": "https://app.xuehuayu.cn/v.html?source=extension&from=fanqie&vid=",
   "虾米": "https://jx.xmflv.com/?url=",
   "ivito": "https://jx.ivito.cn/?url=",
   "parwix": "https://jx.bozrc.com:4433/player/?url=",

@@ -16,5 +16,13 @@
     "default_title": "看看插件",
     "default_popup": "html/popup.html"
   },
-  "homepage_url": "https://www.xuehuayu.cn"
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["./css/inject.css"],
+      "js": ["./js/inject.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "homepage_url": "https://xuehuayu.cn"
 }

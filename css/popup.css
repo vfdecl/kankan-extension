@@ -24,6 +24,10 @@ div {
   color: #333;
   font-size: 22px;
 }
+.tips a {
+  margin-right: 10px;
+  /* text-decoration: none; */
+}
 #ipt,
 #jxapis {
   display: inline-block;
@@ -54,7 +58,7 @@ div {
   padding: 0 5px;
   font-size: 22px;
   color: rgb(120, 224, 35);
-  border-radius: 4px;
+  border-radius: 2px;
   background: rgba(0, 0, 0, 0.7);
 }
 

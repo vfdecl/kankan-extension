@@ -24,7 +24,7 @@ $(function () {
       slt.find('option').eq(0).prop('selected', true)
       showToast('地址不能为空')
     } else {
-      window.open(val + iptVal, 'kankan', 'width='+(window.screen.availWidth)+',height='+(window.screen.availHeight)+ ', fullscreen=yes, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')
+      window.open(val + iptVal, 'kankan', 'width='+(window.screen.availWidth)+',height='+(window.screen.availHeight)+ ', fullscreen=yes, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no')
     }
   })
 
