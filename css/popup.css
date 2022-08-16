@@ -47,6 +47,9 @@ div {
   transform: translateX(-100%);
   transition: all .3s;
 }
+.tips a:hover{
+  color: #5468ff;
+}
 .tips a:hover::after {
   transform: translateX(0%);
 }
