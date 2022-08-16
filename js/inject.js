@@ -1,6 +1,6 @@
 (function () {
-  const ldApi = 'https://xuehuayu.cn/v.html?source=extension&from=leduo&vid='
-  const fqApi = 'https://xuehuayu.cn/v.html?source=extension&from=fanqie&vid='
+  const api = 'https://xuehuayu.cn/v.html?source=extension&from={{}}&vid='
+
   const loc = window.location.href
 
   function _$ (selector) {
@@ -18,6 +18,7 @@
       const _text = li.innerText
       if (_text.includes('XM')) {
         li.classList = li.classList + ' vod-li'
+        const ldApi = api.replace('{{}}', 'leduo')
         const xm = _html.replace(/<.+\/?>|<.+>.*?<\.*>/g, '')
         const nums = _html.match(/.*\>(.*?)\$/)
         const num = nums ? ':' + nums[1] : ''
@@ -37,6 +38,7 @@
       const _text = li.innerText
       if (_text.includes('FQ')) {
         li.classList = li.classList + ' vod-li'
+        const fqApi = api.replace('{{}}', 'fanqie')
         const xm = _html.replace(/<.+\/?>|<.+>.*?<\.*>|.*?\$/g, '')
         const nums = _html.match(/.*\>(.*?)\$/)
         const num = nums ? ':' + nums[1] : ''

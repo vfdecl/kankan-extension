@@ -26,8 +26,15 @@ div {
 }
 .tips a {
   margin-right: 10px;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
+.tips .mob {
+  color: #1890ff;
+}
+.tips .mob:hover {
+  color: #5468ff;
+}
+
 #ipt,
 #jxapis {
   display: inline-block;
