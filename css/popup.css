@@ -25,7 +25,7 @@ div {
   font-size: 22px;
 }
 .tips p {
-  margin: 10px auto;
+  margin: 6px auto;
 }
 .tips a {
   position: relative;
@@ -88,4 +88,7 @@ div {
 #toast.hide,
 #loading.hide {
   display: none;
+}
+.github {
+  text-align: right;
 }
