@@ -24,15 +24,31 @@ div {
   color: #333;
   font-size: 22px;
 }
+.tips p {
+  margin: 10px auto;
+}
 .tips a {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 2px;
   margin-right: 10px;
   text-decoration: none;
-}
-.tips .mob {
   color: #1890ff;
+  overflow: hidden;
 }
-.tips .mob:hover {
-  color: #5468ff;
+.tips a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #5468ff;
+  transform: translateX(-100%);
+  transition: all .3s;
+}
+.tips a:hover::after {
+  transform: translateX(0%);
 }
 
 #ipt,
