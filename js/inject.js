@@ -1,5 +1,5 @@
 (function () {
-  const api = 'https://xuehuayu.cn/v.html?source=extension&from={{}}&vid='
+  const api = 'https://xuehuayu.cn/v.html?source=extension&from={{from}}&title={{title}}&vid='
 
   const loc = window.location.href
 
@@ -18,10 +18,10 @@
       const _text = li.innerText
       if (_text.includes('XM')) {
         li.classList = li.classList + ' vod-li'
-        const ldApi = api.replace('{{}}', 'leduo')
         const xm = _html.replace(/<.+\/?>|<.+>.*?<\.*>/g, '')
         const nums = _html.match(/.*\>(.*?)\$/)
         const num = nums ? ':' + nums[1] : ''
+        const ldApi = api.replace('{{from}}', 'leduo').replace('{{title}}', `${nums[1]}`)
         const _a = document.createElement('a')
         _a.href = ldApi + xm
         _a.target = '_blank'
@@ -38,10 +38,10 @@
       const _text = li.innerText
       if (_text.includes('FQ')) {
         li.classList = li.classList + ' vod-li'
-        const fqApi = api.replace('{{}}', 'fanqie')
         const xm = _html.replace(/<.+\/?>|<.+>.*?<\.*>|.*?\$/g, '')
         const nums = _html.match(/.*\>(.*?)\$/)
         const num = nums ? ':' + nums[1] : ''
+        const fqApi = api.replace('{{from}}', 'fanqie').replace('{{title}}', `${nums[1]}`)
         const _a = document.createElement('a')
         _a.href = fqApi + xm
         _a.target = '_blank'

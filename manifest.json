@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "看看",
-  "version": "22.08.166",
-  "description": "看看插件",
+  "version": "22.08.168",
+  "description": "看看扩展",
   "icons": {
     "16": "img/20x20.png",
     "48": "img/40x40.png",
@@ -13,7 +13,7 @@
   },
   "action": {
     "default_icon": "img/20x20.png",
-    "default_title": "看看插件",
+    "default_title": "看看扩展",
     "default_popup": "html/popup.html"
   },
   "content_scripts": [
