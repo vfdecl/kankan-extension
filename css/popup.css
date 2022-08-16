@@ -1,8 +1,9 @@
 html,
 body {
+  position: relative;
   width: 520px;
   height: 200px;
-  position: relative;
+  user-select: none;
 }
 
 div {
