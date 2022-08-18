@@ -96,3 +96,9 @@ div {
 .github {
   text-align: right;
 }
+.mob {
+  color: blue !important;
+}
+.mob::after {
+  border-color: blue !important;
+}
