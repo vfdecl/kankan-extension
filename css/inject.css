@@ -1,3 +1,6 @@
+.d-i-b {
+  display: inline-block !important;
+}
 .vod-li {
   display: flex;
   align-items: center;
@@ -19,12 +22,14 @@
   align-items: center;
   box-sizing: border-box;
   border: 1px solid #1890ff;
+  max-height: 30px;
+  line-height: 30px;
   color: #1890ff;
   background-color: #fff;
   text-decoration: none;
   margin-left: 5px;
   border-radius: 2px;
-  padding: 2px 4px;
+  padding: 0 4px;
   font-size: 16px;
   letter-spacing: 2px;
   font-weight: bold;
