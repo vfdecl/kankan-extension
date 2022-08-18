@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "看看",
-  "version": "22.08.182",
+  "version": "22.08.183",
   "description": "看看扩展",
   "icons": {
     "16": "img/20x20.png",

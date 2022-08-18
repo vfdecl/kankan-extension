@@ -1,7 +1,7 @@
 (function () {
   const api = 'https://xuehuayu.cn/v.html?source=extension&from={{from}}&title={{title}}&vid='
   const loc = window.location.href
-
+  
   function _$ (selector, dom = document) {
     return dom.querySelector(selector)
   }
@@ -52,7 +52,17 @@
   } else if (loc.includes('guangsuzy') || loc.includes('guangsuziyuan')) {
     const vodList = _$$('.dy-collect-list li') || [];
     const api = 'https://www.gszyv.com/m3u8/?url='
-
+    const wraps = _$$('.dy-collect-video')
+    wraps.forEach(e => { 
+      if (e.innerText.includes('.m3u8')) {
+        e.id = 'kk-play-m3u8'
+      } else {
+        e.id = 'kk-play-yun'
+      }
+    })
+    const title = _$('.dy-collect .dy-title')
+    title.classList = title.classList + ' flex-block center-items'
+    title.innerHTML = title.innerHTML + '<span>&nbsp;&nbsp;[点击跳转到目标位置]==></span><a class="kk-btn d-i-b" target="_self" href="#kk-play-yun">yun</a><a class="kk-btn d-i-b" target="_self" href="#kk-play-m3u8">m3u8</a>'
     vodList.forEach(li => {
       const xm = _$$('a', li)[0].href
 
@@ -74,7 +84,10 @@
   } else if (loc.includes('hongniuzy') || loc.includes('hongniuziyuan')) {
     const vodList = _$$('.vodplayinfo li') || [];
     const api = 'https://www.tutukiki.com/m3u8/?url='
-
+    const wrap = _$$('.playBox')[1]
+    const title = _$('.liketitle', wrap)
+    title.style.height = 'auto'
+    title.innerHTML = '<div class="flex-block center-items">' + title.innerHTML + '</div>' + '<div><span class="f-s-16">&nbsp;&nbsp;[点击跳转到目标位置]==></span><a class="kk-btn d-i-b" target="_self" href="#play_1">yun</a><a class="kk-btn d-i-b" target="_self" href="#play_2">m3u8</a></div>'
     vodList.forEach(li => {
       const xm = _$$('a', li)[0].href
       if (xm.includes('http')) {

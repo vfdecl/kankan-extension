@@ -1,6 +1,24 @@
 .d-i-b {
   display: inline-block !important;
 }
+.flex-block {
+  display: flex;
+}
+.center-items {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.f-s-16 {
+  font-size: 16px;
+}
 .vod-li {
   display: flex;
   align-items: center;
